@@ -1,0 +1,61 @@
+====================
+SYSTEM UPDATE
+====================
+sudo apt update
+sudo apt upgrade -y
+
+====================
+GROUPS
+====================
+sudo addgroup hr
+sudo addgroup finance
+sudo addgroup it
+
+====================
+USERS
+====================
+sudo adduser user1
+sudo usermod -aG hr user1
+
+sudo adduser user2
+sudo usermod -aG finance user2
+
+sudo adduser user3
+sudo usermod -aG it user3
+
+====================
+FILE PERMISSIONS
+====================
+touch sensitive.txt
+chmod 700 sensitive.txt
+chown user1:hr sensitive.txt
+
+====================
+SSH HARDENING
+====================
+sudo nano /etc/ssh/sshd_config
+
+# Changes:
+PermitRootLogin no
+Port 2222
+
+sudo systemctl restart ssh
+
+====================
+FIREWALL (UFW)
+====================
+sudo ufw allow 2222
+sudo ufw enable
+sudo ufw status
+
+====================
+FAIL2BAN
+====================
+sudo apt install fail2ban -y
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+
+====================
+LOG ANALYSIS
+====================
+sudo cat /var/log/auth.log
