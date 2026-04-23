@@ -137,6 +137,10 @@ This is essential for detecting suspicious behavior.
 
 ---
 
+## Screenshots
+
+https://www.notion.so/Linux-Ubuntu-server-Project-3482f9b6c931802aab60c522d02beaf1?source=copy_link
+
 ## 📈 Key Takeaways
 
 * Gained hands-on experience in Linux system administration
