@@ -43,8 +43,8 @@ I was responsible for configuring and securing the server to meet enterprise sec
 ### Server Configuration
 
 * 4 GB RAM
-* 4 CPU cores
-* 20 GB storage
+* 2 CPU cores
+* 35 GB storage
 
 ### Installation
 
@@ -126,37 +126,6 @@ This is essential for detecting suspicious behavior.
 * Tested SSH security configuration
 * Observed logs for system activity
 
----
-
-## 📸 Key Screenshots
-
-### Server Installation
-
-![Installation](Screenshots/install.png)
-
-### User Management
-
-![Users](Screenshots/users.png)
-
-### File Permissions
-
-![Permissions](Screenshots/permissions.png)
-
-### SSH Configuration
-
-![SSH](Screenshots/ssh.png)
-
-### Firewall (UFW)
-
-![Firewall](Screenshots/ufw.png)
-
-### Fail2Ban
-
-![Fail2Ban](Screenshots/fail2ban.png)
-
-### Logs
-
-![Logs](Screenshots/logs.png)
 
 ---
 
